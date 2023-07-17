@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "偽中国語コンバーター for browser",
+    "version": "1.0",
+    "description": "偽中国語コンバーター for Chrome",
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["Convert.js"]
+        }
+      ],
+      "browser_action": {
+        "default_icon": {
+          "16": "static/icon.png",
+          "32": "static/icon.png",
+          "48": "static/icon.png",
+          "128": "static/icon.png"
+        }
+    }
+  }
